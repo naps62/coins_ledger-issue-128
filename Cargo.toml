@@ -11,3 +11,4 @@ ethers = { features = [
   "ws",
   "ledger",
 ], git = "https://github.com/gakonst/ethers-rs", rev = "c6efa65" }
+coins-ledger = { git = "https://github.com/summa-tx/coins", tag = "coins-ledger@0.9.1" }

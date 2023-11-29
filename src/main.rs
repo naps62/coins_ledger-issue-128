@@ -10,7 +10,7 @@ async fn main() {
     // second call works if ledger is connected,
     // but panics if its disconnected
     // comment this to reach 2nd issue
-    let _ = dbg!(call_ledger().await);
+    // let _ = dbg!(call_ledger().await);
 
     // ISSUE 2
     // these fail with a poisoned mutex,

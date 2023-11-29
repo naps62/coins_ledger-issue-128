@@ -400,9 +400,36 @@ dependencies = [
 ]
 
 [[package]]
+name = "coins-ledger"
+version = "0.9.1"
+source = "git+https://github.com/summa-tx/coins?tag=coins-ledger@0.9.1#551ca4b8f1e04a0b570eb1f5ee7f4f37be5bb072"
+dependencies = [
+ "async-trait",
+ "byteorder",
+ "cfg-if",
+ "getrandom",
+ "hex",
+ "hidapi-rusb",
+ "js-sys",
+ "lazy_static",
+ "libc",
+ "log",
+ "matches",
+ "nix",
+ "serde",
+ "tap",
+ "thiserror",
+ "tokio",
+ "tracing",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+]
+
+[[package]]
 name = "coins_ledger-issue-128"
 version = "0.1.0"
 dependencies = [
+ "coins-ledger 0.9.1 (git+https://github.com/summa-tx/coins?tag=coins-ledger@0.9.1)",
  "ethers",
  "tokio",
 ]
@@ -996,7 +1023,7 @@ dependencies = [
  "async-trait",
  "coins-bip32",
  "coins-bip39",
- "coins-ledger",
+ "coins-ledger 0.9.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "const-hex",
  "elliptic-curve",
  "eth-keystore",
