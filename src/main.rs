@@ -13,7 +13,7 @@ async fn main() {
     // let _ = dbg!(call_ledger().await);
 
     // ISSUE 2
-    // these fail with a poisoned mutex,
+    // these fail, first with Hid(InitializationError), then with a poisoned mutex
     // regardless of ledger being connected or not
     let _ = tokio::spawn(call_ledger()).await;
     let _ = tokio::spawn(call_ledger()).await;
