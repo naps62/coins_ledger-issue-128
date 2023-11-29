@@ -11,4 +11,3 @@ ethers = { features = [
   "ws",
   "ledger",
 ], git = "https://github.com/gakonst/ethers-rs", rev = "c6efa65" }
-anyhow = "1.0.75"
