@@ -375,8 +375,7 @@ dependencies = [
 [[package]]
 name = "coins-ledger"
 version = "0.9.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "12adb2f4914ec6d8659cd9d1630463ca13ac90f5be18133cb9a70921f15fc145"
+source = "git+https://github.com/summa-tx/coins?branch=prestwich/more-ledger-refactor#1c724ed9ed9dca3d9893daf021f671358643a5f9"
 dependencies = [
  "async-trait",
  "byteorder",
@@ -385,39 +384,9 @@ dependencies = [
  "hex",
  "hidapi-rusb",
  "js-sys",
- "lazy_static",
- "libc",
  "log",
- "matches",
  "nix",
- "serde",
- "tap",
- "thiserror",
- "tokio",
- "tracing",
- "wasm-bindgen",
- "wasm-bindgen-futures",
-]
-
-[[package]]
-name = "coins-ledger"
-version = "0.9.1"
-source = "git+https://github.com/summa-tx/coins?tag=coins-ledger@0.9.1#551ca4b8f1e04a0b570eb1f5ee7f4f37be5bb072"
-dependencies = [
- "async-trait",
- "byteorder",
- "cfg-if",
- "getrandom",
- "hex",
- "hidapi-rusb",
- "js-sys",
- "lazy_static",
- "libc",
- "log",
- "matches",
- "nix",
- "serde",
- "tap",
+ "once_cell",
  "thiserror",
  "tokio",
  "tracing",
@@ -429,7 +398,6 @@ dependencies = [
 name = "coins_ledger-issue-128"
 version = "0.1.0"
 dependencies = [
- "coins-ledger 0.9.1 (git+https://github.com/summa-tx/coins?tag=coins-ledger@0.9.1)",
  "ethers",
  "tokio",
 ]
@@ -1023,7 +991,7 @@ dependencies = [
  "async-trait",
  "coins-bip32",
  "coins-bip39",
- "coins-ledger 0.9.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "coins-ledger",
  "const-hex",
  "elliptic-curve",
  "eth-keystore",
@@ -1752,12 +1720,6 @@ name = "log"
 version = "0.4.20"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5e6163cb8c49088c2c36f57875e58ccd8c87c7427f7fbd50ea6710b2f3f2e8f"
-
-[[package]]
-name = "matches"
-version = "0.1.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2532096657941c2fea9c289d370a250971c689d4f143798ff67113ec042024a5"
 
 [[package]]
 name = "md-5"
